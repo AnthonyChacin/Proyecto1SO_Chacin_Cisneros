@@ -27,17 +27,485 @@ public class Interfaz extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        separador2 = new javax.swing.JTextField();
+        jPanel1 = new javax.swing.JPanel();
+        produccionPlatos = new javax.swing.JLabel();
+        labelProduccionPlatos = new javax.swing.JLabel();
+        cocineros = new javax.swing.JLabel();
+        tituloCocineros = new javax.swing.JLabel();
+        tituloCocinerosE = new javax.swing.JLabel();
+        tituloCocinerosP = new javax.swing.JLabel();
+        tituloCocinerosPF = new javax.swing.JLabel();
+        cocinerosE = new javax.swing.JTextField();
+        cocinerosPF = new javax.swing.JTextField();
+        cocinerosP = new javax.swing.JTextField();
+        separador1 = new javax.swing.JTextField();
+        contratarCocineroE = new javax.swing.JButton();
+        contratarCocineroPF = new javax.swing.JButton();
+        contratarCocineroP = new javax.swing.JButton();
+        separador3 = new javax.swing.JTextField();
+        despedirCocineroE = new javax.swing.JButton();
+        despedirCocineroPF = new javax.swing.JButton();
+        despedirCocineroP = new javax.swing.JButton();
+        labelProduccionPlatos1 = new javax.swing.JLabel();
+        armadoOrdenes = new javax.swing.JLabel();
+        mesonerosIMG = new javax.swing.JLabel();
+        tituloMesoneros = new javax.swing.JLabel();
+        mesoneros = new javax.swing.JTextField();
+        contratarMesonero = new javax.swing.JButton();
+        despedirMesonero = new javax.swing.JButton();
+        tituloMesoneros1 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        mesoneros1 = new javax.swing.JTextField();
+        mesonesIMG = new javax.swing.JLabel();
+        labelMesones = new javax.swing.JLabel();
+        tituloMesonesE = new javax.swing.JLabel();
+        tituloMesonesPF = new javax.swing.JLabel();
+        tituloMesonesP = new javax.swing.JLabel();
+        mesonE = new javax.swing.JTextField();
+        mesonPF = new javax.swing.JTextField();
+        mesonP = new javax.swing.JTextField();
+        cronometradorIMG = new javax.swing.JLabel();
+        tituloCronometrador = new javax.swing.JLabel();
+        tituloCronometrador1 = new javax.swing.JLabel();
+        cronometrador = new javax.swing.JTextField();
+        GerenteIMG = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        gerente = new javax.swing.JTextField();
+        HorasIMG = new javax.swing.JLabel();
+        HorasParaCierre = new javax.swing.JLabel();
+        horas = new javax.swing.JTextField();
+        Salir = new javax.swing.JButton();
+
+        separador2.setEditable(false);
+        separador2.setBackground(new java.awt.Color(81, 4, 22));
+        separador2.setBorder(null);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jPanel1.setBackground(new java.awt.Color(242, 242, 210));
+        jPanel1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        produccionPlatos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ProduccionPlatos.jpg"))); // NOI18N
+
+        labelProduccionPlatos.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        labelProduccionPlatos.setText("Armado de ordenes");
+
+        cocineros.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cocinero.jpg"))); // NOI18N
+
+        tituloCocineros.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        tituloCocineros.setForeground(new java.awt.Color(33, 59, 12));
+        tituloCocineros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tituloCocineros.setText("Cocineros");
+
+        tituloCocinerosE.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloCocinerosE.setForeground(new java.awt.Color(68, 144, 24));
+        tituloCocinerosE.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tituloCocinerosE.setText("Entradas:");
+
+        tituloCocinerosP.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloCocinerosP.setForeground(new java.awt.Color(68, 144, 24));
+        tituloCocinerosP.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tituloCocinerosP.setText("Postres:");
+
+        tituloCocinerosPF.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloCocinerosPF.setForeground(new java.awt.Color(68, 144, 24));
+        tituloCocinerosPF.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tituloCocinerosPF.setText("Platos Fuertes:");
+
+        cocinerosE.setEditable(false);
+
+        cocinerosPF.setEditable(false);
+
+        cocinerosP.setEditable(false);
+
+        separador1.setEditable(false);
+        separador1.setBackground(new java.awt.Color(81, 4, 22));
+        separador1.setBorder(null);
+
+        contratarCocineroE.setBackground(new java.awt.Color(6, 65, 33));
+        contratarCocineroE.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        contratarCocineroE.setForeground(new java.awt.Color(255, 255, 255));
+        contratarCocineroE.setText("Contratar");
+        contratarCocineroE.setBorder(null);
+
+        contratarCocineroPF.setBackground(new java.awt.Color(6, 65, 33));
+        contratarCocineroPF.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        contratarCocineroPF.setForeground(new java.awt.Color(255, 255, 255));
+        contratarCocineroPF.setText("Contratar");
+        contratarCocineroPF.setBorder(null);
+
+        contratarCocineroP.setBackground(new java.awt.Color(6, 65, 33));
+        contratarCocineroP.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        contratarCocineroP.setForeground(new java.awt.Color(255, 255, 255));
+        contratarCocineroP.setText("Contratar");
+        contratarCocineroP.setBorder(null);
+
+        separador3.setEditable(false);
+        separador3.setBackground(new java.awt.Color(81, 4, 22));
+        separador3.setBorder(null);
+
+        despedirCocineroE.setBackground(new java.awt.Color(153, 0, 0));
+        despedirCocineroE.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        despedirCocineroE.setForeground(new java.awt.Color(255, 255, 255));
+        despedirCocineroE.setText("Despedir");
+        despedirCocineroE.setBorder(null);
+
+        despedirCocineroPF.setBackground(new java.awt.Color(153, 0, 0));
+        despedirCocineroPF.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        despedirCocineroPF.setForeground(new java.awt.Color(255, 255, 255));
+        despedirCocineroPF.setText("Despedir");
+        despedirCocineroPF.setBorder(null);
+
+        despedirCocineroP.setBackground(new java.awt.Color(153, 0, 0));
+        despedirCocineroP.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        despedirCocineroP.setForeground(new java.awt.Color(255, 255, 255));
+        despedirCocineroP.setText("Despedir");
+        despedirCocineroP.setBorder(null);
+
+        labelProduccionPlatos1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        labelProduccionPlatos1.setText("Producción de platos");
+
+        armadoOrdenes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/ordenes.jpg"))); // NOI18N
+
+        mesonerosIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/mesonero.png"))); // NOI18N
+
+        tituloMesoneros.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        tituloMesoneros.setForeground(new java.awt.Color(33, 59, 12));
+        tituloMesoneros.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        tituloMesoneros.setText("Mesoneros:");
+
+        mesoneros.setEditable(false);
+
+        contratarMesonero.setBackground(new java.awt.Color(6, 65, 33));
+        contratarMesonero.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        contratarMesonero.setForeground(new java.awt.Color(255, 255, 255));
+        contratarMesonero.setText("Contratar");
+        contratarMesonero.setBorder(null);
+
+        despedirMesonero.setBackground(new java.awt.Color(153, 0, 0));
+        despedirMesonero.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        despedirMesonero.setForeground(new java.awt.Color(255, 255, 255));
+        despedirMesonero.setText("Despedir");
+        despedirMesonero.setBorder(null);
+
+        tituloMesoneros1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        tituloMesoneros1.setForeground(new java.awt.Color(68, 144, 24));
+        tituloMesoneros1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        tituloMesoneros1.setText("Ordenes atendidas");
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/OrdenAtendida.jpg"))); // NOI18N
+
+        mesoneros1.setEditable(false);
+
+        mesonesIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/mesones.jpg"))); // NOI18N
+
+        labelMesones.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
+        labelMesones.setText("Mesones");
+
+        tituloMesonesE.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloMesonesE.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tituloMesonesE.setText("Entradas:");
+
+        tituloMesonesPF.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloMesonesPF.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tituloMesonesPF.setText("Platos Fuertes:");
+
+        tituloMesonesP.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloMesonesP.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        tituloMesonesP.setText("Postres:");
+
+        mesonE.setEditable(false);
+
+        mesonPF.setEditable(false);
+
+        mesonP.setEditable(false);
+
+        cronometradorIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cronometrador.jpg"))); // NOI18N
+
+        tituloCronometrador.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloCronometrador.setForeground(new java.awt.Color(223, 76, 21));
+        tituloCronometrador.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tituloCronometrador.setText("Jefe de mesoneros");
+        tituloCronometrador.setAutoscrolls(true);
+
+        tituloCronometrador1.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        tituloCronometrador1.setForeground(new java.awt.Color(223, 76, 21));
+        tituloCronometrador1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        tituloCronometrador1.setText("(Cronometrador)");
+        tituloCronometrador1.setAutoscrolls(true);
+
+        cronometrador.setEditable(false);
+
+        GerenteIMG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        GerenteIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/gerente.png"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 40, 81));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setText("Gerente");
+
+        gerente.setEditable(false);
+
+        HorasIMG.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HorasIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/horasCierre.png"))); // NOI18N
+
+        HorasParaCierre.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
+        HorasParaCierre.setForeground(new java.awt.Color(237, 28, 36));
+        HorasParaCierre.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        HorasParaCierre.setText("Horas para el cierre");
+
+        horas.setEditable(false);
+
+        Salir.setBackground(new java.awt.Color(0, 0, 0));
+        Salir.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
+        Salir.setForeground(new java.awt.Color(255, 255, 255));
+        Salir.setText("Salir");
+        Salir.setBorder(null);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(produccionPlatos))
+                            .addComponent(cocineros, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(tituloCocinerosP, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(tituloCocinerosE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(tituloCocinerosPF, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(cocinerosP, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(contratarCocineroP, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(despedirCocineroP, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(cocinerosPF, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(contratarCocineroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(despedirCocineroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(cocinerosE, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(contratarCocineroE, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(despedirCocineroE, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(labelProduccionPlatos1, javax.swing.GroupLayout.PREFERRED_SIZE, 242, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(tituloCocineros, javax.swing.GroupLayout.PREFERRED_SIZE, 338, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(separador1, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(armadoOrdenes)
+                            .addComponent(mesonerosIMG))
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(labelProduccionPlatos, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(125, 125, 125)
+                                        .addComponent(mesoneros, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(25, 25, 25)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(tituloMesoneros, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(contratarMesonero, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(despedirMesonero, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
+                                            .addGap(21, 21, 21)
+                                            .addComponent(jLabel1)
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addComponent(mesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(tituloMesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(separador3)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                            .addComponent(tituloMesonesP, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(tituloMesonesPF, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(tituloMesonesE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(mesonE, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(mesonPF, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(mesonP, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(mesonesIMG)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(labelMesones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(71, 71, 71)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addComponent(tituloCronometrador, javax.swing.GroupLayout.DEFAULT_SIZE, 165, Short.MAX_VALUE)
+                                            .addComponent(tituloCronometrador1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                            .addComponent(cronometrador)))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(cronometradorIMG)
+                                        .addGap(13, 13, 13)))
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGap(52, 52, 52)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(HorasIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(HorasParaCierre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(horas, javax.swing.GroupLayout.Alignment.TRAILING)))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addComponent(GerenteIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                    .addComponent(gerente)))))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(produccionPlatos)
+                            .addComponent(labelProduccionPlatos1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(cocineros, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(tituloCocineros, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tituloCocinerosE, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cocinerosE, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(contratarCocineroE, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(despedirCocineroE, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tituloCocinerosPF, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cocinerosPF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(contratarCocineroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(despedirCocineroPF, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(tituloCocinerosP, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(cocinerosP, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(contratarCocineroP, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(despedirCocineroP, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(7, 7, 7))))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(separador1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(armadoOrdenes, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(labelProduccionPlatos, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(mesonerosIMG)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(tituloMesoneros, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(mesoneros, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                            .addComponent(contratarMesonero, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(despedirMesonero, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGap(18, 18, 18)
+                                        .addComponent(tituloMesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addGap(12, 12, 12)
+                                                .addComponent(mesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(separador3, javax.swing.GroupLayout.PREFERRED_SIZE, 2, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(mesonesIMG, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(labelMesones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tituloMesonesE, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mesonE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(tituloMesonesPF, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(mesonPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(tituloMesonesP, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(mesonP, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(cronometrador, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(18, 18, 18))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(cronometradorIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(28, 28, 28)
+                                .addComponent(tituloCronometrador)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(tituloCronometrador1))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(jLabel2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(gerente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(GerenteIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(HorasIMG, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel1Layout.createSequentialGroup()
+                                        .addComponent(HorasParaCierre)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(horas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(18, 18, 18)
+                                .addComponent(Salir, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -47,30 +515,7 @@ public class Interfaz extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Interfaz.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Interfaz().setVisible(true);
@@ -79,5 +524,54 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel GerenteIMG;
+    private javax.swing.JLabel HorasIMG;
+    private javax.swing.JLabel HorasParaCierre;
+    private javax.swing.JButton Salir;
+    private javax.swing.JLabel armadoOrdenes;
+    private javax.swing.JLabel cocineros;
+    private javax.swing.JTextField cocinerosE;
+    private javax.swing.JTextField cocinerosP;
+    private javax.swing.JTextField cocinerosPF;
+    private javax.swing.JButton contratarCocineroE;
+    private javax.swing.JButton contratarCocineroP;
+    private javax.swing.JButton contratarCocineroPF;
+    private javax.swing.JButton contratarMesonero;
+    private javax.swing.JTextField cronometrador;
+    private javax.swing.JLabel cronometradorIMG;
+    private javax.swing.JButton despedirCocineroE;
+    private javax.swing.JButton despedirCocineroP;
+    private javax.swing.JButton despedirCocineroPF;
+    private javax.swing.JButton despedirMesonero;
+    private javax.swing.JTextField gerente;
+    private javax.swing.JTextField horas;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel labelMesones;
+    private javax.swing.JLabel labelProduccionPlatos;
+    private javax.swing.JLabel labelProduccionPlatos1;
+    private javax.swing.JTextField mesonE;
+    private javax.swing.JTextField mesonP;
+    private javax.swing.JTextField mesonPF;
+    private javax.swing.JTextField mesoneros;
+    private javax.swing.JTextField mesoneros1;
+    private javax.swing.JLabel mesonerosIMG;
+    private javax.swing.JLabel mesonesIMG;
+    private javax.swing.JLabel produccionPlatos;
+    private javax.swing.JTextField separador1;
+    private javax.swing.JTextField separador2;
+    private javax.swing.JTextField separador3;
+    private javax.swing.JLabel tituloCocineros;
+    private javax.swing.JLabel tituloCocinerosE;
+    private javax.swing.JLabel tituloCocinerosP;
+    private javax.swing.JLabel tituloCocinerosPF;
+    private javax.swing.JLabel tituloCronometrador;
+    private javax.swing.JLabel tituloCronometrador1;
+    private javax.swing.JLabel tituloMesoneros;
+    private javax.swing.JLabel tituloMesoneros1;
+    private javax.swing.JLabel tituloMesonesE;
+    private javax.swing.JLabel tituloMesonesP;
+    private javax.swing.JLabel tituloMesonesPF;
     // End of variables declaration//GEN-END:variables
 }
