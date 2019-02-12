@@ -4,7 +4,9 @@ import interfaz.Interfaz;
 
 /**
  *
- * @authores: Anthony Chacin José Cisneros
+ * @authores
+    * Anthony Chacin
+    * José Cisneros 
  */
 public class AplicacionRestaurante {
 
