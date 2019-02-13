@@ -133,7 +133,7 @@
                                                       <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
                                                       <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                                                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                                                      <Component id="mesoneros1" min="-2" pref="51" max="-2" attributes="0"/>
+                                                      <Component id="ordenesAtendidas" min="-2" pref="51" max="-2" attributes="0"/>
                                                   </Group>
                                                   <Component id="tituloMesoneros1" min="-2" pref="168" max="-2" attributes="0"/>
                                               </Group>
@@ -287,7 +287,7 @@
                                           <Group type="103" groupAlignment="0" attributes="0">
                                               <Group type="102" attributes="0">
                                                   <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-                                                  <Component id="mesoneros1" min="-2" pref="25" max="-2" attributes="0"/>
+                                                  <Component id="ordenesAtendidas" min="-2" pref="25" max="-2" attributes="0"/>
                                               </Group>
                                               <Group type="102" alignment="0" attributes="0">
                                                   <EmptySpace max="-2" attributes="0"/>
@@ -479,6 +479,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="contratarCocineroEActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="contratarCocineroPF">
           <Properties>
@@ -496,6 +499,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="contratarCocineroPFActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="contratarCocineroP">
           <Properties>
@@ -513,6 +519,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="contratarCocineroPActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="separador3">
           <Properties>
@@ -541,6 +550,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="despedirCocineroEActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="despedirCocineroPF">
           <Properties>
@@ -558,6 +570,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="despedirCocineroPFActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="despedirCocineroP">
           <Properties>
@@ -575,6 +590,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="despedirCocineroPActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="labelProduccionPlatos1">
           <Properties>
@@ -631,6 +649,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="contratarMesoneroActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="despedirMesonero">
           <Properties>
@@ -648,6 +669,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="despedirMesoneroActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JLabel" name="tituloMesoneros1">
           <Properties>
@@ -668,7 +692,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="mesoneros1">
+        <Component class="javax.swing.JTextField" name="ordenesAtendidas">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
           </Properties>
@@ -834,6 +858,9 @@
               <Border info="null"/>
             </Property>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="SalirActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>

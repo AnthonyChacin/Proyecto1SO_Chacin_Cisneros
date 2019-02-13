@@ -1,6 +1,10 @@
 
 package interfaz;
 
+import java.awt.event.ActionEvent;
+import javax.swing.Timer;
+import logica.*;
+
 /**
  *
  * @authores
@@ -8,9 +12,22 @@ package interfaz;
     * José Cisneros 
  */
 public class Interfaz extends javax.swing.JFrame {
+    
+    private AplicacionRestaurante app;
+    private Parametros param;
 
     public Interfaz() {
         initComponents();
+        
+        this.app = new AplicacionRestaurante();
+        this.param = this.app.getParam();
+        this.inicializarParametros(param);
+
+        Timer timer = new Timer(1, (ActionEvent ae) -> { // Actualizar interfaz cada 1ms (0,001s)
+            this.actualizarInterfaz();
+            
+        });
+        timer.start();
     }
 
     /**
@@ -51,7 +68,7 @@ public class Interfaz extends javax.swing.JFrame {
         despedirMesonero = new javax.swing.JButton();
         tituloMesoneros1 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        mesoneros1 = new javax.swing.JTextField();
+        ordenesAtendidas = new javax.swing.JTextField();
         mesonesIMG = new javax.swing.JLabel();
         labelMesones = new javax.swing.JLabel();
         tituloMesonesE = new javax.swing.JLabel();
@@ -123,18 +140,33 @@ public class Interfaz extends javax.swing.JFrame {
         contratarCocineroE.setForeground(new java.awt.Color(255, 255, 255));
         contratarCocineroE.setText("Contratar");
         contratarCocineroE.setBorder(null);
+        contratarCocineroE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarCocineroEActionPerformed(evt);
+            }
+        });
 
         contratarCocineroPF.setBackground(new java.awt.Color(6, 65, 33));
         contratarCocineroPF.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         contratarCocineroPF.setForeground(new java.awt.Color(255, 255, 255));
         contratarCocineroPF.setText("Contratar");
         contratarCocineroPF.setBorder(null);
+        contratarCocineroPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarCocineroPFActionPerformed(evt);
+            }
+        });
 
         contratarCocineroP.setBackground(new java.awt.Color(6, 65, 33));
         contratarCocineroP.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         contratarCocineroP.setForeground(new java.awt.Color(255, 255, 255));
         contratarCocineroP.setText("Contratar");
         contratarCocineroP.setBorder(null);
+        contratarCocineroP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarCocineroPActionPerformed(evt);
+            }
+        });
 
         separador3.setEditable(false);
         separador3.setBackground(new java.awt.Color(81, 4, 22));
@@ -145,18 +177,33 @@ public class Interfaz extends javax.swing.JFrame {
         despedirCocineroE.setForeground(new java.awt.Color(255, 255, 255));
         despedirCocineroE.setText("Despedir");
         despedirCocineroE.setBorder(null);
+        despedirCocineroE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirCocineroEActionPerformed(evt);
+            }
+        });
 
         despedirCocineroPF.setBackground(new java.awt.Color(153, 0, 0));
         despedirCocineroPF.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         despedirCocineroPF.setForeground(new java.awt.Color(255, 255, 255));
         despedirCocineroPF.setText("Despedir");
         despedirCocineroPF.setBorder(null);
+        despedirCocineroPF.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirCocineroPFActionPerformed(evt);
+            }
+        });
 
         despedirCocineroP.setBackground(new java.awt.Color(153, 0, 0));
         despedirCocineroP.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         despedirCocineroP.setForeground(new java.awt.Color(255, 255, 255));
         despedirCocineroP.setText("Despedir");
         despedirCocineroP.setBorder(null);
+        despedirCocineroP.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirCocineroPActionPerformed(evt);
+            }
+        });
 
         labelProduccionPlatos1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         labelProduccionPlatos1.setText("Producción de platos");
@@ -177,12 +224,22 @@ public class Interfaz extends javax.swing.JFrame {
         contratarMesonero.setForeground(new java.awt.Color(255, 255, 255));
         contratarMesonero.setText("Contratar");
         contratarMesonero.setBorder(null);
+        contratarMesonero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                contratarMesoneroActionPerformed(evt);
+            }
+        });
 
         despedirMesonero.setBackground(new java.awt.Color(153, 0, 0));
         despedirMesonero.setFont(new java.awt.Font("Arial Black", 0, 12)); // NOI18N
         despedirMesonero.setForeground(new java.awt.Color(255, 255, 255));
         despedirMesonero.setText("Despedir");
         despedirMesonero.setBorder(null);
+        despedirMesonero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                despedirMesoneroActionPerformed(evt);
+            }
+        });
 
         tituloMesoneros1.setFont(new java.awt.Font("Arial Black", 1, 14)); // NOI18N
         tituloMesoneros1.setForeground(new java.awt.Color(68, 144, 24));
@@ -191,7 +248,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/OrdenAtendida.jpg"))); // NOI18N
 
-        mesoneros1.setEditable(false);
+        ordenesAtendidas.setEditable(false);
 
         mesonesIMG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/mesones.jpg"))); // NOI18N
 
@@ -257,6 +314,11 @@ public class Interfaz extends javax.swing.JFrame {
         Salir.setForeground(new java.awt.Color(255, 255, 255));
         Salir.setText("Salir");
         Salir.setBorder(null);
+        Salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SalirActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -324,7 +386,7 @@ public class Interfaz extends javax.swing.JFrame {
                                                     .addGap(21, 21, 21)
                                                     .addComponent(jLabel1)
                                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                                    .addComponent(mesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(ordenesAtendidas, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addComponent(tituloMesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE))))))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(armadoOrdenes)
@@ -437,7 +499,7 @@ public class Interfaz extends javax.swing.JFrame {
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addGap(12, 12, 12)
-                                                .addComponent(mesoneros1, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addComponent(ordenesAtendidas, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel1Layout.createSequentialGroup()
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
@@ -505,6 +567,42 @@ public class Interfaz extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void contratarCocineroEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarCocineroEActionPerformed
+        this.app.contratarCocineroE();
+    }//GEN-LAST:event_contratarCocineroEActionPerformed
+
+    private void contratarCocineroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarCocineroPFActionPerformed
+        this.app.contratarCocineroPF();
+    }//GEN-LAST:event_contratarCocineroPFActionPerformed
+
+    private void contratarCocineroPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarCocineroPActionPerformed
+        this.app.contratarCocineroP();
+    }//GEN-LAST:event_contratarCocineroPActionPerformed
+
+    private void despedirCocineroEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirCocineroEActionPerformed
+        this.app.despedirCocineroE();
+    }//GEN-LAST:event_despedirCocineroEActionPerformed
+
+    private void despedirCocineroPFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirCocineroPFActionPerformed
+        this.app.despedirCocineroPF();
+    }//GEN-LAST:event_despedirCocineroPFActionPerformed
+
+    private void despedirCocineroPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirCocineroPActionPerformed
+        this.app.despedirCocineroP();
+    }//GEN-LAST:event_despedirCocineroPActionPerformed
+
+    private void contratarMesoneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contratarMesoneroActionPerformed
+        this.app.contratarMesonero();
+    }//GEN-LAST:event_contratarMesoneroActionPerformed
+
+    private void despedirMesoneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_despedirMesoneroActionPerformed
+        this.app.despedirMesonero();
+    }//GEN-LAST:event_despedirMesoneroActionPerformed
+
+    private void SalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SalirActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_SalirActionPerformed
+
     public static void main(String args[]) {
 
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -512,6 +610,41 @@ public class Interfaz extends javax.swing.JFrame {
                 new Interfaz().setVisible(true);
             }
         });
+    }
+    
+    public void inicializarParametros(Parametros param) {
+        this.cocinerosE.setText(String.valueOf(this.param.getNumIniCocE()));
+        this.cocinerosPF.setText(String.valueOf(this.param.getNumIniCocPF()));
+        this.cocinerosP.setText(String.valueOf(this.param.getNumIniCocP()));
+        this.mesoneros.setText(String.valueOf(this.param.getNumIniMesone()));
+        this.horas.setText(String.valueOf(this.param.getHorasParaElCierre()));
+    }
+    
+    public void actualizarInterfaz(){
+        //Actualizar mesones
+        this.mesonE.setText(String.valueOf(app.getMesonE().getCantUnidades()));
+        this.mesonPF.setText(String.valueOf(app.getMesonPF().getCantUnidades()));
+        this.mesonP.setText(String.valueOf(app.getMesonP().getCantUnidades()));
+        
+        //Actualizar cocineros y mesoneros
+        this.cocinerosE.setText(String.valueOf(app.getCantCocinerosE()));
+        this.cocinerosPF.setText(String.valueOf(app.getCantCocinerosPF()));
+        this.cocinerosP.setText(String.valueOf(app.getCantCocinerosP()));
+        this.mesoneros.setText(String.valueOf(app.getCantMesoneros()));
+        
+        
+        
+        //Actualizar ordenes armadas
+        this.ordenesAtendidas.setText(String.valueOf(AplicacionRestaurante.getOrdenesArmadas()));
+        
+        //Actualizar cronometrador
+        this.cronometrador.setText(app.getCronometrador().getStatus());
+        
+        //Actualizar gerente
+        this.gerente.setText(app.getGerente().getStatus());
+                
+        //Actualizar horas para el cierre 
+        this.horas.setText(String.valueOf(app.getCronometrador().getContador()));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -546,9 +679,9 @@ public class Interfaz extends javax.swing.JFrame {
     private javax.swing.JTextField mesonP;
     private javax.swing.JTextField mesonPF;
     private javax.swing.JTextField mesoneros;
-    private javax.swing.JTextField mesoneros1;
     private javax.swing.JLabel mesonerosIMG;
     private javax.swing.JLabel mesonesIMG;
+    private javax.swing.JTextField ordenesAtendidas;
     private javax.swing.JLabel produccionPlatos;
     private javax.swing.JTextField separador1;
     private javax.swing.JTextField separador2;
