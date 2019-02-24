@@ -38,8 +38,8 @@ public class Parametros {
                       DEFAULT_NUM_INI_COCINEROS_PF = 2,
                       DEFAULT_NUM_MAX_COCINEROS_PF = 4,
                       DEFAULT_NUM_INI_COCINEROS_P = 0,
-                      DEFAULT_NUM_MAX_COCINEROS_P = 3,
-                      DEFAULT_NUM_INI_MESONEROS = 1,
+                      DEFAULT_NUM_MAX_COCINEROS_P = 2,
+                      DEFAULT_NUM_INI_MESONEROS = 2,
                       DEFAULT_NUM_MAX_MESONEROS = 6;
     
     public Parametros(String archivo){

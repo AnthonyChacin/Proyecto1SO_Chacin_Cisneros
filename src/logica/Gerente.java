@@ -28,8 +28,8 @@ public class Gerente extends Thread {
         this.sContador = sContador;
         this.sUF = sUF;
         this.param = param;
-        this.horaMayor = (this.param.getUnaHoraEnSegs()*2000);
-        this.horaMenor = (this.param.getUnaHoraEnSegs()*450);
+        this.horaMayor = (this.param.getUnaHoraEnSegs()*450);
+        this.horaMenor = (this.param.getUnaHoraEnSegs()*250);
         this.cronometrador = cronometrador;
     }
     
@@ -62,7 +62,9 @@ public class Gerente extends Thread {
                     
                     this.sUF.acquire();
                     Thread.sleep(this.param.getUnaHoraEnSegs()*100); // 0.1 horas = param.getNumHorasSegs * 1000 * 0.1
+
                     AplicacionRestaurante.setOrdenesArmadas(0);
+                    
                     this.sUF.release();
                     
                 }
